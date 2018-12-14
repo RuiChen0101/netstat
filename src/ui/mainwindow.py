@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/mainui.ui'
+# Form implementation generated from reading ui file './src/ui/mainui.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -35,6 +35,11 @@ class Ui_TCPCounter(object):
         self.tcplist.setHorizontalHeaderItem(5, item)
         self.tcplist.horizontalHeader().setDefaultSectionSize(150)
         self.tcplist.horizontalHeader().setMinimumSectionSize(100)
+        self.sessionNum = QtWidgets.QTextEdit(TCPCounter)
+        self.sessionNum.setGeometry(QtCore.QRect(0, 500, 150, 50))
+        self.sessionNum.setMinimumSize(QtCore.QSize(150, 50))
+        self.sessionNum.setMaximumSize(QtCore.QSize(150, 50))
+        self.sessionNum.setObjectName("sessionNum")
 
         self.retranslateUi(TCPCounter)
         QtCore.QMetaObject.connectSlotsByName(TCPCounter)
